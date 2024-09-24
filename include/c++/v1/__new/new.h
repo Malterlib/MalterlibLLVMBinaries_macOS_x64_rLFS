@@ -10,7 +10,6 @@
 #ifndef _LIBCPP__NEW_NEW
 #define _LIBCPP__NEW_NEW
 
-#include <__availability>
 #include <__config>
 
 namespace std  // purposefully not using versioning namespace
