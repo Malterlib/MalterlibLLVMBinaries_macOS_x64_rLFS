@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc3fc76d41f0f71e7fc8823c5ae54e3e2322904c525635a8d307051b9c48d79d
-size 816
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if 0
+  // [flat.set], class template flat_­set
+  using std::flat_set;
+
+  using std::sorted_unique;
+  using std::sorted_unique_t;
+
+  using std::uses_allocator;
+
+  // [flat.set.erasure], erasure for flat_­set
+  using std::erase_if;
+
+  // [flat.multiset], class template flat_­multiset
+  using std::flat_multiset;
+
+  using std::sorted_equivalent;
+  using std::sorted_equivalent_t;
+#endif
+} // namespace std

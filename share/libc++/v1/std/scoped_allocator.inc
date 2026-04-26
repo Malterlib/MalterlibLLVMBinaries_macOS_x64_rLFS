@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8fa0f79770c909e7d0bfa3b34e7ef30d65f0bc139636aae91fca5133a1b8976
-size 598
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  // class template scoped_allocator_adaptor
+  using std::scoped_allocator_adaptor;
+
+  // [scoped.adaptor.operators], scoped allocator operators
+  using std::operator==;
+
+} // namespace std

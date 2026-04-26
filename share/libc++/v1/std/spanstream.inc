@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71daa8e127f3ca14e269c7ba0e7e1275f88e61cafdc1fed12f89edd8527e8221
-size 964
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if 0
+  using std::basic_spanbuf;
+
+  using std::swap;
+
+  using std::spanbuf;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wspanbuf;
+#  endif
+
+  using std::basic_ispanstream;
+
+  using std::ispanstream;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wispanstream;
+#  endif
+
+  using std::basic_ospanstream;
+
+  using std::ospanstream;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wospanstream;
+#  endif
+
+  using std::basic_spanstream;
+
+  using std::spanstream;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wspanstream;
+#  endif
+#endif
+} // namespace std

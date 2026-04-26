@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f4654078e5fe56e0ce8fca577a9ebf9b6d68aa6dcc0ae5bb81f4934d4967cc0
-size 633
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if _LIBCPP_HAS_LOCALIZATION
+  using std::lconv _LIBCPP_USING_IF_EXISTS;
+
+  using std::localeconv _LIBCPP_USING_IF_EXISTS;
+  using std::setlocale _LIBCPP_USING_IF_EXISTS;
+#endif // _LIBCPP_HAS_LOCALIZATION
+} // namespace std

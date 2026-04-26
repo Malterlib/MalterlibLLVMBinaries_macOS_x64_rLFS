@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5d142ea773a69d1c69aa4128d126056600dd606b4e896652f64c66eb733d2a7
-size 501
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if _LIBCPP_HAS_THREADS
+  using std::latch;
+#endif // _LIBCPP_HAS_THREADS
+} // namespace std

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2812530c06a7ce53454c91c9c895dcb867b06beef19b6c6bce846c9de2cbc69f
-size 558
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  using std::initializer_list;
+
+  // [support.initlist.range], initializer list range access
+  using std::begin;
+  using std::end;
+} // namespace std

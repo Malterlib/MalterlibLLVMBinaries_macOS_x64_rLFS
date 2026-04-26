@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66a2d1b58ea2e23aa04ae13d044d3ae468f27156ed0b6b1611b0754ba049bbe2
-size 964
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  using std::max_align_t _LIBCPP_USING_IF_EXISTS;
+  using std::nullptr_t;
+  using std::ptrdiff_t _LIBCPP_USING_IF_EXISTS;
+  using std::size_t _LIBCPP_USING_IF_EXISTS;
+
+  using std::byte;
+
+  // [support.types.byteops], byte type operations
+  using std::operator<<=;
+  using std::operator<<;
+  using std::operator>>=;
+  using std::operator>>;
+  using std::operator|=;
+  using std::operator|;
+  using std::operator&=;
+  using std::operator&;
+  using std::operator^=;
+  using std::operator^;
+  using std::operator~;
+  using std::to_integer;
+} // namespace std

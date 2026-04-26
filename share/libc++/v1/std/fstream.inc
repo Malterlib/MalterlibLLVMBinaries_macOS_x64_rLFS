@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66f5bb415de266b7412c034803ac81834a2a6444c13ac5163be00bfc6298d772
-size 1026
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if _LIBCPP_HAS_LOCALIZATION
+  using std::basic_filebuf;
+
+#  if _LIBCPP_HAS_FILESYSTEM
+  using std::swap;
+#  endif
+
+  using std::filebuf;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wfilebuf;
+#  endif
+
+  using std::basic_ifstream;
+
+  using std::ifstream;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wifstream;
+#  endif
+
+  using std::basic_ofstream;
+
+  using std::ofstream;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wofstream;
+#  endif
+
+  using std::basic_fstream;
+
+  using std::fstream;
+#  if _LIBCPP_HAS_WIDE_CHARACTERS
+  using std::wfstream;
+#  endif
+#endif // _LIBCPP_HAS_LOCALIZATION
+} // namespace std

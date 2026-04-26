@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1de96fa667554f09eedc5919a39412b71efc8586e9a5e24e01c8303fd50d7f5e
-size 667
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  using std::bitset;
+
+  // [bitset.operators], bitset operators
+  using std::operator&;
+  using std::operator|;
+  using std::operator^;
+  using std::operator>>;
+  using std::operator<<;
+
+  // [bitset.hash], hash support
+  using std::hash;
+
+} // namespace std

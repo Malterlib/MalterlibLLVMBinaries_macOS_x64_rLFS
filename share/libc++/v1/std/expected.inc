@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f0690d04fd5ec7878d81aec5e4c39822ddff7b5f29148b3937bb98d2eb93f3a
-size 826
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if _LIBCPP_STD_VER >= 23
+  // [expected.unexpected], class template unexpected
+  using std::unexpected;
+
+  // [expected.bad], class template bad_expected_access
+  using std::bad_expected_access;
+
+  // in-place construction of unexpected values
+  using std::unexpect;
+  using std::unexpect_t;
+
+  // [expected.expected], class template expected
+  using std::expected;
+#endif // _LIBCPP_STD_VER >= 23
+} // namespace std

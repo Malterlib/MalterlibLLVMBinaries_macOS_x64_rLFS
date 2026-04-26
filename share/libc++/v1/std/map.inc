@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95e9e284260e9d7066d0ea1fe6371557e4a44ca0d7122d8dcddc0504a4fc8753
-size 768
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  // [map], class template map
+  using std::map;
+
+  using std::operator==;
+  using std::operator<=>;
+
+  using std::swap;
+
+  // [map.erasure], erasure for map
+  using std::erase_if;
+
+  // [multimap], class template multimap
+  using std::multimap;
+
+  namespace pmr {
+    using std::pmr::map;
+    using std::pmr::multimap;
+  } // namespace pmr
+} // namespace std

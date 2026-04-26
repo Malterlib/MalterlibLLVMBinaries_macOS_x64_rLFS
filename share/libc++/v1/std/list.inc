@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:682c99a4fce2e38d74ab9f389608f559ff995a83e3a13a91e873bdddc3e0ff7d
-size 673
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  // [list], class template list
+  using std::list;
+
+  using std::operator==;
+  using std::operator<=>;
+
+  using std::swap;
+
+  // [list.erasure], erasure
+  using std::erase;
+  using std::erase_if;
+
+  namespace pmr {
+    using std::pmr::list;
+  }
+} // namespace std

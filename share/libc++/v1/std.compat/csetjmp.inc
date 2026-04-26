@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1c690e7707bba92d6783bcf36e052768f9755149e58edd557b70110276ccb4d
-size 492
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export {
+  using ::jmp_buf _LIBCPP_USING_IF_EXISTS;
+  using ::longjmp _LIBCPP_USING_IF_EXISTS;
+} // export

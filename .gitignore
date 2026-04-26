@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a3c12339ca39afc2e6f71211cba7153294e264e98553d248b1ada0991754bd0
-size 147
+/bin/Malterlib_libtool.MalterlibDependency
+/bin/Malterlib_libtool.updated
+/bin/libtool
+/lib/clang/*/lib/*-unknown-linux-gnu
+/lib/clang/*/lib/.lock

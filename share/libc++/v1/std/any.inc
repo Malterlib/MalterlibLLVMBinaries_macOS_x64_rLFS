@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6674ef8ea8e271c36800de847ca6e009cad98837fb181e1f053a1dca80acc9a8
-size 657
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+
+  // [any.bad.any.cast], class bad_any_cast
+  using std::bad_any_cast;
+
+  // [any.class], class any
+  using std::any;
+
+  // [any.nonmembers], non-member functions
+  using std::any_cast;
+  using std::make_any;
+  using std::swap;
+
+} // namespace std

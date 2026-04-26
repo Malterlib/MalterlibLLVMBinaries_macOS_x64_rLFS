@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a52eba97bada1230480004aba6cf785ae73021766d0cd3de18bf076ab8e2cf6
-size 767
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+#if _LIBCPP_HAS_LOCALIZATION
+#  if _LIBCPP_STD_VER < 26 || defined(_LIBCPP_ENABLE_CXX26_REMOVED_CODECVT)
+  using std::codecvt_mode;
+
+  using std::codecvt_utf16;
+  using std::codecvt_utf8;
+  using std::codecvt_utf8_utf16;
+#  endif // _LIBCPP_STD_VER < 26 || defined(_LIBCPP_ENABLE_CXX26_REMOVED_CODECVT)
+#endif   // _LIBCPP_HAS_LOCALIZATION
+} // namespace std

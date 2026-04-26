@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e3d99c2a906cbb8892c0ecb35f59dd1e5f42ed28b0c4275da12e879abc90f61
-size 678
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  // [deque], class template deque
+  using std::deque;
+
+  using std::operator==;
+  using std::operator<=>;
+
+  using std::swap;
+
+  // [deque.erasure], erasure
+  using std::erase;
+  using std::erase_if;
+
+  namespace pmr {
+    using std::pmr::deque;
+  }
+} // namespace std

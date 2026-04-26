@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94bbc808240e943169a8391aaeb2bca74dec0d94d94c3584f46ca4616138dab1
-size 625
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  // [fp.style], floating-point type properties
+  using std::float_denorm_style;
+  using std::float_round_style;
+
+  // [numeric.limits], class template numeric_­limits
+  using std::numeric_limits;
+} // namespace std

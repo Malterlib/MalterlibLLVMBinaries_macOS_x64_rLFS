@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aedebf3dd0935093b99a13c8a2fa78688b746d60ffcd29192d80947c24ae035a
-size 789
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+export namespace std {
+  // [queue], class template queue
+  using std::queue;
+
+  using std::operator==;
+  using std::operator!=;
+  using std::operator<;
+  using std::operator>;
+  using std::operator<=;
+  using std::operator>=;
+  using std::operator<=>;
+
+  using std::swap;
+  using std::uses_allocator;
+
+  // [priority.queue], class template priority_queue
+  using std::priority_queue;
+} // namespace std
