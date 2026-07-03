@@ -11,7 +11,7 @@
 #define _LIBCPP___CONFIGURATION_COMPILER_H
 
 #if __has_include("__config_site")
-#	 include <__config_site>
+#  include <__config_site>
 #endif
 
 #ifndef _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
@@ -35,16 +35,16 @@
 // Warn if a compiler version is used that is not supported anymore
 // LLVM RELEASE Update the minimum compiler versions
 #  if defined(_LIBCPP_CLANG_VER)
-#    if _LIBCPP_CLANG_VER < 1800
-#      warning "Libc++ only supports Clang 18 and later"
+#    if _LIBCPP_CLANG_VER < 2001
+#      warning "Libc++ only supports Clang 20 and later"
 #    endif
 #  elif defined(_LIBCPP_APPLE_CLANG_VER)
-#    if _LIBCPP_APPLE_CLANG_VER < 1500
-#      warning "Libc++ only supports AppleClang 15 and later"
+#    if _LIBCPP_APPLE_CLANG_VER < 1700
+#      warning "Libc++ only supports AppleClang 26 and later"
 #    endif
 #  elif defined(_LIBCPP_GCC_VER)
-#    if _LIBCPP_GCC_VER < 1400
-#      warning "Libc++ only supports GCC 14 and later"
+#    if _LIBCPP_GCC_VER < 1500
+#      warning "Libc++ only supports GCC 15 and later"
 #    endif
 #  endif
 

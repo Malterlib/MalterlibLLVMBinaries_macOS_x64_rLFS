@@ -11,7 +11,7 @@
 #define _LIBCPP___CONFIGURATION_LANGUAGE_H
 
 #if __has_include("__config_site")
-#	 include <__config_site>
+#  include <__config_site>
 #endif
 
 #ifndef _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
@@ -20,6 +20,9 @@
 
 // NOLINTBEGIN(libcpp-cpp-version-check)
 #ifdef __cplusplus
+#  if __cplusplus < 201103L
+#    define _LIBCPP_CXX03_LANG
+#  endif
 #  if __cplusplus <= 201103L
 #    define _LIBCPP_STD_VER 11
 #  elif __cplusplus <= 201402L
